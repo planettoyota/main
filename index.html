@@ -313,8 +313,8 @@ $('#li-id').addEventListener('pointerdown', () => { if (!staff.length) loadStaff
 function showChange(forced){
   $('#ch-title').textContent = forced ? 'Set your password' : 'Change password';
   $('#ch-note').textContent = forced
-    ? 'Welcome, ' + S.user.name + '. Choose your own password. You will use it for the portal and every app. The admin can see this password, so do not use one you use for your bank, email or anything personal.'
-    : 'This one password works for the portal and every app. The admin can see it, so do not use a personal password.';
+    ? 'Welcome, ' + S.user.name + '. Choose your own password. One Password for Every App.'
+    : 'One Password for Every App.';
   $('#ch-oldlbl').textContent = forced ? 'Temporary password (given by admin)' : 'Current password';
   $('#ch-back').hidden = forced; $('#ch-logout').hidden = !forced;
   ['ch-old','ch-new','ch-new2'].forEach(i => { $('#'+i).value = ''; $('#'+i).type = 'password'; });
