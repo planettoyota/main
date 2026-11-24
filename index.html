@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Planet Toyota Portal</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#17191E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PT Portal">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F1EC; --card:#FFFFFF; --ink:#15171C; --mut:#6A6F79; --line:#E2DED5;
+  --red:#C4122F; --red-ink:#fff; --ok:#1E7A4C; --warn:#A85A08; --soft:#EDEAE3;
+  --r:16px; --shadow:0 1px 2px rgba(20,22,28,.05),0 8px 24px rgba(20,22,28,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0E1013; --card:#181B20; --ink:#F2F0EB; --mut:#9AA0AB; --line:#2A2E36;
+         --red:#E23A52; --ok:#4CC48A; --warn:#E3A04C; --soft:#22262D;
+         --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3); }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  min-height:100dvh;-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+.view{max-width:560px;margin:0 auto;padding:0 16px calc(32px + env(safe-area-inset-bottom))}
+h1,h2,h3,h4,p{margin:0}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+small{color:var(--mut);font-size:13px}
+
+/* login */
+.hero{padding:calc(56px + env(safe-area-inset-top)) 4px 28px}
+.mark{width:56px;height:56px;border-radius:15px;background:var(--red);color:#fff;display:grid;place-items:center;
+  font-weight:800;font-size:22px;letter-spacing:-.5px;margin-bottom:20px}
+.hero h1{font-size:30px;letter-spacing:-.6px;line-height:1.1}
+.hero p{color:var(--mut);margin-top:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.pad{padding:20px}
+label{display:block;font-size:13px;font-weight:600;color:var(--mut);margin-bottom:14px}
+label input,label select,.tools input{display:block;width:100%;margin-top:6px;padding:13px 14px;border-radius:12px;
+  border:1px solid var(--line);background:var(--bg);font-size:16px;font-weight:500;color:var(--ink);outline:none;
+  -webkit-appearance:none;appearance:none}
+label input:focus,label select:focus,.tools input:focus{border-color:var(--ink)}
+label input:disabled{opacity:.6}
+label select{padding-right:40px;text-overflow:ellipsis;background-repeat:no-repeat;background-position:right 14px center;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23888' stroke-width='2'/%3E%3C/svg%3E")}
+.pw{position:relative}
+.pw input{padding-right:70px}
+.pw button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;
+  color:var(--mut);font-size:13px;font-weight:700;padding:8px 10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:50px;padding:0 18px;
+  border-radius:13px;border:1px solid var(--line);background:var(--card);font-weight:700;font-size:16px;
+  text-decoration:none;color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.danger{color:var(--red);border-color:color-mix(in srgb,var(--red) 35%,var(--line))}
+.btn.wa{background:#1FA855;border-color:#1FA855;color:#fff}
+.btn.sm{width:auto;min-height:46px;padding:0 16px;font-size:15px;white-space:nowrap}
+.btn:disabled{opacity:.55}
+.btn.busy::after{content:"…"}
+.btn+.btn,.btn+.rowbtns,.rowbtns+.btn{margin-top:10px}
+.rowbtns{display:flex;gap:10px}
+.rowbtns .btn{margin-top:0}
+.hint{color:var(--mut);font-size:13px;margin-top:14px}
+.msg{background:color-mix(in srgb,var(--red) 10%,var(--card));color:var(--red);border-radius:12px;padding:11px 13px;
+  font-size:14px;font-weight:600;margin-bottom:14px}
+
+/* home */
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+  padding:calc(28px + env(safe-area-inset-top)) 4px 22px}
+.top small{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;color:var(--red)}
+.top h2{font-size:26px;letter-spacing:-.5px;line-height:1.15;margin-top:4px}
+.top p{color:var(--mut);font-size:14px;margin-top:2px}
+.avatar,.ini{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);
+  font-weight:800;font-size:15px;display:grid;place-items:center}
+.sec{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:6px 4px 10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{display:flex;flex-direction:column;justify-content:space-between;min-height:132px;padding:16px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);
+  text-decoration:none;color:var(--ink)}
+.tile:active{transform:scale(.98)}
+.tile .ic{font-size:30px;line-height:1}
+.tile b{display:block;font-size:16px;line-height:1.2;letter-spacing:-.2px}
+.tile small{display:block;margin-top:3px}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:34px 20px;border:1px dashed var(--line);border-radius:var(--r)}
+.manage{margin-top:18px}
+
+/* bars, tabs */
+.bar{display:flex;align-items:center;gap:6px;padding:calc(14px + env(safe-area-inset-top)) 0 12px}
+.bar h2{flex:1;font-size:20px;letter-spacing:-.3px}
+.icon{width:44px;height:44px;border-radius:12px;border:0;background:none;font-size:22px;line-height:1}
+.tabs{display:flex;background:var(--soft);border-radius:13px;padding:4px;margin-bottom:14px}
+.tabs button{flex:1;border:0;background:none;padding:10px 0;border-radius:10px;font-weight:700;font-size:14px;color:var(--mut)}
+.tabs button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.tools{display:flex;gap:10px;margin-bottom:10px}
+.tools input{margin:0;background:var(--card)}
+.chips{display:flex;gap:8px;margin-bottom:12px}
+.chips button{border:1px solid var(--line);background:none;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:700;color:var(--mut)}
+.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.list{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:13px 14px;border:0;background:none;
+  border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .ini{width:40px;height:40px;font-size:14px;background:var(--soft);color:var(--ink)}
+.row .ini.em{font-size:20px}
+.grow{flex:1;min-width:0}
+.grow b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grow small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pills{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none}
+.pill{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--soft);color:var(--mut);white-space:nowrap}
+.pill.ok{color:var(--ok)} .pill.off{color:var(--red)} .pill.warn{color:var(--warn)}
+.logrow{padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.logrow:last-child{border-bottom:0}
+.logrow b{font-size:13px;letter-spacing:.02em}
+.none{padding:28px 16px;text-align:center;color:var(--mut)}
+
+/* bottom sheet */
+#scrim{position:fixed;inset:0;background:rgba(10,12,16,.5);z-index:10}
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:11;max-width:560px;margin:0 auto;max-height:92dvh;overflow:auto;
+  background:var(--card);border-radius:22px 22px 0 0;padding:10px 18px calc(22px + env(safe-area-inset-bottom));
+  box-shadow:0 -10px 40px rgba(0,0,0,.25)}
+#sheet::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 14px}
+#sheet h3{font-size:20px;letter-spacing:-.3px;margin-bottom:14px}
+#sheet h4{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:20px 0 8px}
+.check{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:var(--ink);margin:4px 0 0}
+.check input{display:inline-block;flex:none;width:22px;height:22px;margin:0;padding:0;-webkit-appearance:checkbox;appearance:auto;accent-color:var(--ink)}
+.acc{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.acc:last-of-type{border-bottom:0}
+.acc span{flex:1;min-width:0;font-weight:600;font-size:15px}
+.acc select{flex:none;width:44%;padding:10px 12px;border-radius:11px;border:1px solid var(--line);background:var(--bg);
+  font-size:15px;font-weight:600}
+.acc select.set{border-color:var(--ink)}
+.cred{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:14px 0 16px;display:grid;gap:12px}
+.cred b{display:block;font-size:22px;letter-spacing:.2px;overflow-wrap:anywhere}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.gap{height:16px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;
+  background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;
+  max-width:calc(100vw - 32px);text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+#toast.bad{background:var(--red);color:#fff}
+@media (min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- premium look (24 Nov 2026): graphite showroom band, one red pinstripe, porcelain floor ---------- */
+:root{ --bg:#F3F4F6; --card:#FFFFFF; --ink:#17191E; --mut:#6B7079; --line:#E3E5E9; --red:#C8102E; --soft:#EEF0F3;
+  --graphite:#17191E; --graphite-2:#22252C; --silver:#C9CDD3;
+  --shadow:0 1px 1px rgba(23,25,30,.04),0 10px 30px -12px rgba(23,25,30,.18); }
+@media (prefers-color-scheme:dark){ :root{ --bg:#0F1114; --card:#181B20; --ink:#F1F2F4; --mut:#9AA0AA; --line:#2A2E35; --soft:#20242A;
+  --graphite:#0B0C0F; --graphite-2:#16181D; --shadow:0 1px 1px rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.6); } }
+body{font-family:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-feature-settings:"tnum" 1}
+/* the band: graphite with a showroom spotlight and a single pinstripe at its foot */
+.band{position:relative;background:radial-gradient(120% 90% at 85% -10%,rgba(255,255,255,.13),rgba(255,255,255,0) 55%),
+  linear-gradient(180deg,var(--graphite-2),var(--graphite));color:#F4F5F7;margin:0 calc(50% - 50vw);padding:calc(30px + env(safe-area-inset-top)) var(--gut) 104px}
+:root{--gut:max(20px,calc(50vw - 260px))}
+html,body{overflow-x:hidden}
+.band::after{content:"";position:absolute;left:var(--gut);right:var(--gut);bottom:80px;height:1px;
+  background:linear-gradient(90deg,var(--red),rgba(200,16,46,.55) 40%,rgba(200,16,46,0))}
+.band .brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--silver);letter-spacing:.01em}
+.band .brand i{width:22px;height:22px;border-radius:6px;background:var(--red);display:grid;place-items:center;font:800 10px/1 Manrope,sans-serif;color:#fff;font-style:normal;letter-spacing:-.2px}
+/* home */
+#v-home .top{padding:0;align-items:flex-start}
+#v-home .top small{display:block;font-size:13px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--silver);margin-top:26px}
+#v-home .top h2{font-size:32px;font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-top:6px;color:#fff}
+#v-home .top p{font-size:15px;color:var(--silver);margin-top:8px}
+#v-home .avatar{width:42px;height:42px;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);font-weight:700;font-size:14px;letter-spacing:.02em}
+#v-home .avatar:hover{background:rgba(255,255,255,.14)}
+#v-home .sec{position:relative;z-index:1;margin:-66px 4px 12px;font-size:13px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--silver)}
+#v-home .grid{position:relative;z-index:1;gap:12px}
+.tile{position:relative;min-height:126px;padding:18px 18px 16px;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.tile:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--ink) 22%,var(--line));box-shadow:0 1px 1px rgba(23,25,30,.04),0 18px 36px -14px rgba(23,25,30,.28)}
+.tile:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.tile .ic{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--soft);color:var(--ink);font-size:24px}
+.tile .ic svg{width:26px;height:26px}
+.tile b{font-size:17px;font-weight:700;letter-spacing:-.015em;line-height:1.2}
+.tile small{font-size:13px;font-weight:500;margin-top:4px}
+.tile .go{position:absolute;top:18px;right:16px;width:18px;height:18px;color:var(--silver);transition:color .18s ease,transform .18s ease}
+.tile:hover .go{color:var(--ink);transform:translateX(2px)}
+#v-home .manage .btn{background:transparent;border-color:var(--line);color:var(--mut);font-weight:600}
+#v-home .manage .btn:hover{color:var(--ink);border-color:var(--ink)}
+#v-home .empty{background:var(--card)}
+/* login */
+#v-login .hero .mark{display:none}
+#v-login .hero h1{font-size:34px;font-weight:700;letter-spacing:-.03em;color:#fff;margin-top:28px}
+#v-login .hero p{color:var(--silver);font-size:15px;margin-top:8px}
+#v-login .hero.band{padding-bottom:84px}#v-login .hero.band::after{bottom:60px}
+#v-login .card{position:relative;z-index:1;margin-top:-40px;border-radius:20px}
+.btn{border-radius:14px;font-weight:700;letter-spacing:-.005em}
+.btn.primary{background:var(--graphite);border-color:var(--graphite);color:#fff}
+.btn.primary:hover{background:#000}
+label input:focus,label select:focus,.tools input:focus{border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--ink) 10%,transparent)}
+@media (prefers-color-scheme:dark){ .btn.primary{background:#F1F2F4;border-color:#F1F2F4;color:#0F1114} .btn.primary:hover{background:#fff} }
+@media (min-width:600px){ .band{padding-top:calc(44px + env(safe-area-inset-top))} #v-home .top h2{font-size:38px} #v-home .grid{gap:14px} }
+@media (prefers-reduced-motion:reduce){ .tile,.tile .go{transition:none} .tile:hover{transform:none} }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<main id="v-login" class="view" hidden>
+  <div class="hero band">
+    <div class="brand"><i>PT</i>Planet Toyota, Narnaul</div>
+    <h1>Staff Portal</h1>
+    <p>One login for every app you use at work</p>
+  </div>
+  <form id="loginForm" class="card pad" autocomplete="on">
+    <div id="loginMsg" class="msg" hidden></div>
+    <label>Your name
+      <select id="li-id" name="username" required><option value="">Loading names…</option></select>
+    </label>
+    <label>Password
+      <div class="pw">
+        <input id="li-pw" name="password" type="password" autocomplete="current-password" required>
+        <button type="button" data-act="eye" data-for="li-pw">Show</button>
+      </div>
+    </label>
+    <button class="btn primary" id="li-btn">Log in</button>
+    <p class="hint">Forgot your password? Ask the admin to reset it.</p>
+  </form>
+</main>
+
+<!-- SET / CHANGE PASSWORD -->
+<main id="v-change" class="view" hidden>
+  <header class="bar">
+    <button class="icon" id="ch-back" data-act="home" aria-label="Back">←</button>
+    <h2 id="ch-title">Change password</h2>
+  </header>
+  <form id="changeForm" class="card pad">
+    <p id="ch-note" class="hint" style="margin:0 0 16px"></p>
+    <label><span id="ch-oldlbl">Current password</span>
+      <div class="pw"><input id="ch-old" type="password" autocomplete="current-password" required>
+      <button type="button" data-act="eye" data-for="ch-old">Show</button></div>
+    </label>
+    <label>New password (at least 6 characters)
+      <div class="pw"><input id="ch-new" type="password" autocomplete="new-password" minlength="6" required>
+      <button type="button" data-act="eye" data-for="ch-new">Show</button></div>
+    </label>
+    <label>New password again
+      <div class="pw"><input id="ch-new2" type="password" autocomplete="new-password" minlength="6" required>
+      <button type="button" data-act="eye" data-for="ch-new2">Show</button></div>
+    </label>
+    <button class="btn primary" id="ch-btn">Save password</button>
+    <button type="button" class="btn" id="ch-logout" data-act="logout" hidden>Log out</button>
+  </form>
+</main>
+
+<!-- HOME -->
+<main id="v-home" class="view" hidden>
+  <div class="band">
+    <header class="top">
+      <div>
+        <div class="brand"><i>PT</i>Planet Toyota, Narnaul</div>
+        <small id="today"></small>
+        <h2 id="hello"></h2>
+        <p id="desig"></p>
+      </div>
+      <button class="avatar" id="avatar" data-act="menu" aria-label="Account"></button>
+    </header>
+  </div>
+  <div class="sec">Your apps</div>
+  <div id="tiles" class="grid"></div>
+  <div id="manage" class="manage"></div>
+</main>
+
+<!-- ADMIN -->
+<main id="v-admin" class="view" hidden>
+  <header class="bar">
+    <button class="icon" data-act="home" aria-label="Back">←</button>
+    <h2>Admin</h2>
+    <button class="icon" data-act="reload" aria-label="Refresh">↻</button>
+  </header>
+  <nav class="tabs">
+    <button data-act="tab" data-tab="staff">Staff</button>
+    <button data-act="tab" data-tab="apps">Apps</button>
+    <button data-act="tab" data-tab="log">Activity</button>
+  </nav>
+  <div id="adminBody"></div>
+</main>
+
+<div id="scrim" data-act="closeSheet" hidden></div>
+<section id="sheet" role="dialog" aria-modal="true" hidden><div id="sheetBody"></div></section>
+<div id="toast" role="status" hidden></div>
+
+<script>
+/* ───────── CONNECT: paste your Apps Script web-app URL (ends with /exec) ───────── */
+const API_URL = 'https://script.google.com/macros/s/AKfycbx7oZwM7M5Tr0Vwcpl4YledoVdP0NEE5yBFY35lUAjCOeiWEe2gqPkHAW4km8_5K-rh/exec';
+/* ─────────────────────────────────────────────────────────────────────────────── */
+
+const KEY = 'pt_portal';              // shared with every app on planettoyota.github.io
+const CONFIGURED = /^https:\/\/script\.google\.com\//.test(API_URL);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+let S = { token:'', user:null, apps:[] };      // my login
+let A = { users:[], apps:[], log:null };       // admin data
+let tab = 'staff', q = '', flt = 'active', creds = '';
+
+/* ---------- session storage ---------- */
+function loadSession(){ try{ const j = JSON.parse(localStorage.getItem(KEY) || 'null'); if (j && j.token) S = { token:j.token, user:j.user, apps:j.apps || [] }; }catch(e){} }
+function saveSession(){ try{ localStorage.setItem(KEY, JSON.stringify({ token:S.token, user:S.user, apps:S.apps, api:API_URL })); }catch(e){} }
+function clearSession(){ S = { token:'', user:null, apps:[] }; A = { users:[], apps:[], log:null }; try{ localStorage.removeItem(KEY); }catch(e){} }
+
+/* ---------- server ---------- */
+async function api(action, data, tries){
+  if (!CONFIGURED) throw new Error('Portal is not connected yet. Paste the Apps Script URL into index.html.');
+  const body = JSON.stringify(Object.assign({ action, token:S.token }, data || {}));
+  const url = API_URL + '?payload=' + encodeURIComponent(body) + '&n=' + Date.now() + Math.random().toString(36).slice(2);
+  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 60000);
+  let j, txt;
+  try { const r = await fetch(url, { signal:ctl.signal }); txt = await r.text(); }
+  catch(e){ throw new Error(e && e.name === 'AbortError'
+      ? 'The server is taking too long. Tap refresh to check whether it was saved, then try again.'
+      : 'Could not reach the server. Check your internet and try again.'); }
+  finally { clearTimeout(timer); }
+  try { j = JSON.parse(txt); }
+  catch(e){ throw new Error('The server gave an unexpected reply (not from the portal script). Please try again in a minute.'); }
+  if (!j.ok && j.code === 'BUSY' && (tries || 0) < 3){ await new Promise(r => setTimeout(r, 2500)); return api(action, data, (tries || 0) + 1); }   // portal busy: nothing was done, so try again
+  if (!j.ok){
+    if (j.code === 'AUTH'){ clearSession(); closeSheet(); showLogin(j.error); }
+    const err = new Error(j.error || 'Something went wrong.'); err.code = j.code; throw err;
+  }
+  return j;
+}
+async function run(btn, fn){
+  if (btn){ if (btn.disabled) return; btn.disabled = true; btn.classList.add('busy'); }
+  try { await fn(); }
+  catch(e){ if (e.code !== 'AUTH') toast(e.message, true); }
+  finally { if (btn){ btn.disabled = false; btn.classList.remove('busy'); } }
+}
+
+/* ---------- small UI helpers ---------- */
+function show(id){ ['v-login','v-change','v-home','v-admin'].forEach(v => $('#'+v).hidden = v !== id); window.scrollTo(0,0); }
+let toastTimer;
+function toast(msg, bad){ const t = $('#toast'); t.textContent = msg; t.className = bad ? 'bad' : ''; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => t.hidden = true, bad ? 4500 : 2500); }
+function openSheet(html){ $('#sheetBody').innerHTML = html; $('#scrim').hidden = false; $('#sheet').hidden = false; $('#sheet').scrollTop = 0; }
+function closeSheet(){ $('#scrim').hidden = true; $('#sheet').hidden = true; $('#sheetBody').innerHTML = ''; }
+const initials = n => String(n || '?').trim().split(/\s+/).slice(0,2).map(w => w[0]).join('').toUpperCase();
+const when = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('en-IN', { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' }); };
+const portalLink = () => location.href.split('#')[0].split('?')[0];
+
+/* ---------- login / password ---------- */
+function showLogin(msg){
+  const m = $('#loginMsg');
+  const text = msg || (CONFIGURED ? '' : 'Portal is not connected yet. Paste the Apps Script URL into index.html.');
+  m.textContent = text; m.hidden = !text;
+  $('#li-pw').value = '';
+  show('v-login');
+  loadStaff();
+}
+let staff = [];
+function fillStaff(failed){
+  const sel = $('#li-id'); let last = '';
+  try { last = localStorage.getItem(KEY + '_who') || ''; } catch(e){}
+  const keep = sel.value || last;
+  sel.innerHTML = '<option value="">' + (staff.length ? 'Select your name' : failed ? 'Could not load names. Tap to retry.' : 'Loading names…') + '</option>' +
+    staff.map(s => `<option value="${esc(s.id)}">${esc(s.name)}${s.mobile ? ' · ' + esc(s.mobile) : ''}</option>`).join('');
+  if (staff.some(s => s.id === keep)) sel.value = keep;      // this phone remembers who used it last
+}
+async function loadStaff(){
+  try { staff = JSON.parse(localStorage.getItem(KEY + '_staff') || '[]'); } catch(e){ staff = []; }
+  fillStaff();
+  if (!CONFIGURED) return;
+  try { const r = await api('staffList'); staff = r.staff || [];
+        try { localStorage.setItem(KEY + '_staff', JSON.stringify(staff)); } catch(e){}
+        fillStaff(); }
+  catch(e){ fillStaff(true); }
+}
+$('#li-id').addEventListener('pointerdown', () => { if (!staff.length) loadStaff(); });
+function showChange(forced){
+  $('#ch-title').textContent = forced ? 'Set your password' : 'Change password';
+  $('#ch-note').textContent = forced
+    ? 'Welcome, ' + S.user.name + '. Choose your own password. You will use it for the portal and every app. The admin can see this password, so do not use one you use for your bank, email or anything personal.'
+    : 'This one password works for the portal and every app. The admin can see it, so do not use a personal password.';
+  $('#ch-oldlbl').textContent = forced ? 'Temporary password (given by admin)' : 'Current password';
+  $('#ch-back').hidden = forced; $('#ch-logout').hidden = !forced;
+  ['ch-old','ch-new','ch-new2'].forEach(i => { $('#'+i).value = ''; $('#'+i).type = 'password'; });
+  show('v-change');
+}
+function enter(r){
+  if (r.token) S.token = r.token;
+  S.user = r.user; S.apps = r.apps || [];
+  saveSession();
+  if (S.user.mustChange) showChange(true); else showHome();
+}
+$('#loginForm').addEventListener('submit', e => {
+  e.preventDefault();
+  run($('#li-btn'), async () => {
+    $('#loginMsg').hidden = true;
+    try {
+      const r = await api('login', { id:$('#li-id').value, password:$('#li-pw').value,
+        device:(navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '' });
+      try { localStorage.setItem(KEY + '_who', r.user.empId); } catch(e){}
+      enter(r);
+    } catch(err){ const m = $('#loginMsg'); m.textContent = err.message; m.hidden = false; }
+  });
+});
+$('#changeForm').addEventListener('submit', e => {
+  e.preventDefault();
+  run($('#ch-btn'), async () => {
+    const a = $('#ch-new').value, b = $('#ch-new2').value;
+    if (a !== b) throw new Error('The two new passwords do not match.');
+    const r = await api('changePassword', { oldPassword:$('#ch-old').value, newPassword:a });
+    enter(r); toast('Password saved');
+  });
+});
+
+/* ---------- home ---------- */
+// Line icons drawn for the apps (matched on the app's name); any other app keeps the icon chosen in Admin.
+const APP_SVG = {
+  stock: '<path d="M5.2 16.5H4a1 1 0 0 1-1-1v-2.6a1 1 0 0 1 .7-.95l2.6-.85 2.7-3.3A2 2 0 0 1 10.55 7h3.6a2 2 0 0 1 1.5.68l2.85 3.32 2.05.6a1 1 0 0 1 .72.96v2.94a1 1 0 0 1-1 1h-1.05"/><path d="M9.3 16.5h5.4"/><circle cx="7.25" cy="16.5" r="2"/><circle cx="16.75" cy="16.5" r="2"/><path d="M6.6 11.1h11.9M12.2 7.2v3.9"/>',
+  billing: '<path d="M6 3h9l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M15 3v4h4"/><path d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/>',
+  purchase: '<path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/>',
+  insurance: '<path d="M12 3l7 3v5c0 4.6-3 8.3-7 10-4-1.7-7-5.4-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/>',
+  quote: '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/>',
+  parts: '<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+  people: '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.6 3-5.5 6-5.5s5.4 1.9 6 5.5"/><path d="M16 4.8a3.2 3.2 0 0 1 0 6.4M18.5 14.8c1.4.8 2.3 2.5 2.5 5.2"/>',
+  workshop: '<path d="M14.5 5.5a4 4 0 0 0-5.3 5.3L3.5 16.5 7.5 20.5l5.7-5.7a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.8-.8-.8-2.8z"/>'
+};
+function appIcon(a){
+  const n = String(a.name || '').toLowerCase(), k = /stock/.test(n) ? 'stock' : /bill|invoice/.test(n) ? 'billing' : /purchase/.test(n) ? 'purchase' : /insur/.test(n) ? 'insurance'
+    : /quot|qms/.test(n) ? 'quote' : /part|audit/.test(n) ? 'parts' : /hr|payroll|staff|attend/.test(n) ? 'people' : /workshop|service/.test(n) ? 'workshop' : '';
+  return k ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${APP_SVG[k]}</svg>` : esc(a.icon || '▫️');
+}
+function greeting(){
+  const h = Number(new Intl.DateTimeFormat('en-GB', {hour: 'numeric', hour12: false, timeZone: 'Asia/Kolkata'}).format(new Date()));
+  return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
+}
+function showHome(){
+  const u = S.user;
+  $('#hello').textContent = greeting() + ', ' + String(u.name || '').split(' ')[0];
+  $('#today').textContent = new Intl.DateTimeFormat('en-IN', {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Asia/Kolkata'}).format(new Date());
+  $('#desig').textContent = ''; $('#desig').hidden = true;   // designation and app roles are not shown to staff (24 Nov 2026)
+  $('#avatar').textContent = initials(u.name);
+  $('#tiles').innerHTML = S.apps.length ? S.apps.map(a => `
+    <a class="tile" href="${esc(/^https:\/\//.test(a.url) ? a.url : '#')}">
+      <span class="ic">${appIcon(a)}</span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      <span><b>${esc(a.name)}</b></span>
+    </a>`).join('')
+    : '<div class="empty">No apps are assigned to you yet.<br>Please ask the admin.</div>';
+  $('#manage').innerHTML = u.isAdmin ? '<button class="btn" data-act="admin">Manage staff &amp; apps</button>' : '';
+  show('v-home');
+}
+async function refreshMe(){
+  try { const r = await api('me'); S.user = r.user; S.apps = r.apps || []; saveSession();
+        if (S.user.mustChange) showChange(true); else if (!$('#v-home').hidden) showHome(); }
+  catch(e){ /* offline: keep the saved screen */ }
+}
+
+/* ---------- admin ---------- */
+async function loadAdmin(){ const r = await api('adminData'); A.users = r.users; A.apps = r.apps; renderAdmin(); }
+function renderAdmin(){
+  document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
+  const body = $('#adminBody');
+  if (tab === 'staff'){
+    const on = A.users.filter(u => u.active).length;
+    body.innerHTML = `
+      <div class="tools"><input id="q" type="search" placeholder="Search name or mobile" value="${esc(q)}">
+        <button class="btn primary sm" data-act="addUser">+ Add</button></div>
+      <div class="chips">
+        <button data-act="flt" data-f="active" class="${flt==='active'?'on':''}">Active ${on}</button>
+        <button data-act="flt" data-f="inactive" class="${flt==='inactive'?'on':''}">Inactive ${A.users.length - on}</button>
+      </div><div id="staffList"></div>`;
+    renderStaff();
+  } else if (tab === 'apps'){
+    const apps = A.apps.slice().sort((a,b) => a.sort - b.sort);
+    body.innerHTML = `
+      <div class="tools" style="justify-content:space-between;align-items:center">
+        <small>Apps shown on the staff home screen</small>
+        <button class="btn primary sm" data-act="addApp">+ Add app</button></div>
+      <div class="list">${apps.map(a => `
+        <button class="row" data-act="editApp" data-id="${esc(a.id)}">
+          <span class="ini em">${esc(a.icon || '▫️')}</span>
+          <span class="grow"><b>${esc(a.name)}</b><small>${esc(a.roles.join(', '))}</small></span>
+          <span class="pills"><span class="pill ${a.active?'ok':'off'}">${a.active?'On':'Off'}</span>
+            <span class="pill">${A.users.filter(u => u.active && u.access[a.id]).length} staff</span></span>
+        </button>`).join('') || '<div class="none">No apps yet.</div>'}</div>`;
+  } else {
+    body.innerHTML = '<div class="list">' + (A.log === null ? '<div class="none">Loading…</div>'
+      : A.log.length ? A.log.map(r => `
+        <div class="logrow"><b>${esc(r.action.replace(/_/g,' '))}</b> · ${esc(r.who || '—')}
+          <small style="display:block">${esc(when(r.time))}${r.detail ? ' · ' + esc(r.detail) : ''}</small></div>`).join('')
+      : '<div class="none">Nothing yet.</div>') + '</div>';
+  }
+}
+function renderStaff(){
+  const box = $('#staffList'); if (!box) return;
+  const t = q.trim().toLowerCase();
+  const list = A.users
+    .filter(u => (flt === 'active') === u.active)
+    .filter(u => !t || (u.name + ' ' + u.empId + ' ' + u.mobile + ' ' + u.designation).toLowerCase().includes(t))
+    .sort((a,b) => a.name.localeCompare(b.name));
+  const live = id => { const a = A.apps.find(x => x.id === id); return a && a.active; };
+  box.innerHTML = '<div class="list">' + (list.map(u => {
+    const n = Object.keys(u.access).filter(live).length;
+    return `<button class="row" data-act="editUser" data-id="${esc(u.empId)}">
+      <span class="ini">${esc(initials(u.name))}</span>
+      <span class="grow"><b>${esc(u.name)}</b><small>${esc([u.designation, u.mobile, u.reportsTo && (A.users.find(x => x.empId === u.reportsTo) || {}).name ? 'TL: ' + A.users.find(x => x.empId === u.reportsTo).name : ''].filter(Boolean).join(' · ') || '—')}</small></span>
+      <span class="pills">
+        <span class="pill">${n} app${n === 1 ? '' : 's'}</span>
+        ${u.isAdmin ? '<span class="pill ok">Admin</span>' : ''}
+        ${u.locked ? '<span class="pill off">Locked</span>' : u.mustChange && u.active ? '<span class="pill warn">Not logged in yet</span>' : ''}
+      </span></button>`;
+  }).join('') || `<div class="none">${t ? 'No match.' : flt === 'active' ? 'No staff yet. Tap + Add.' : 'No inactive staff.'}</div>`) + '</div>';
+}
+function userSheet(u){
+  const isNew = !u; u = u || { empId:'', name:'', mobile:'', designation:'', isAdmin:false, active:true, access:{} };
+  const me = !isNew && u.empId === S.user.empId;
+  openSheet(`
+    <h3>${isNew ? 'Add staff' : esc(u.name)}</h3>
+    <label>Full name<input id="f-name" value="${esc(u.name)}" autocomplete="off" autocapitalize="words" placeholder="e.g. Rahul Yadav"></label>
+    <label>Mobile (10 digits, shown with the name at login)<input id="f-mobile" value="${esc(u.mobile)}" inputmode="numeric" autocomplete="off"></label>
+    <label>Designation<input id="f-desig" value="${esc(u.designation)}" autocomplete="off" placeholder="e.g. Sales Executive"></label>
+    <label>Reports to (Team Leader)<select id="f-rep"><option value="">Nobody</option>${A.users.filter(x => x.active && x.empId !== u.empId).sort((a,b) => a.name.localeCompare(b.name)).map(x => `<option value="${esc(x.empId)}" ${x.empId === u.reportsTo ? 'selected' : ''}>${esc(x.name)}${x.designation ? ' · ' + esc(x.designation) : ''}</option>`).join('')}</select></label>
+    <label class="check"><input type="checkbox" id="f-admin" ${u.isAdmin ? 'checked' : ''} ${me ? 'disabled' : ''}> Portal admin (can manage staff and apps)</label>
+    <h4>App access</h4>
+    ${A.apps.filter(a => a.active).sort((a,b) => a.sort - b.sort).map(a => `
+      <div class="acc"><span>${esc(a.icon)} ${esc(a.name)}</span>
+        <select data-app="${esc(a.id)}" class="${u.access[a.id] ? 'set' : ''}">
+          <option value="">No access</option>
+          ${a.roles.map(r => `<option ${u.access[a.id] === r ? 'selected' : ''}>${esc(r)}</option>`).join('')}
+        </select></div>`).join('') || '<small>No apps added yet.</small>'}
+    <div class="gap"></div>
+    <button class="btn primary" data-act="saveUser" data-id="${esc(u.empId)}" data-new="${isNew ? 1 : ''}">${isNew ? 'Create login' : 'Save'}</button>
+    ${isNew || me ? '' : `<div class="rowbtns">
+      <button class="btn" data-act="resetPwd" data-id="${esc(u.empId)}">Reset password</button>
+      <button class="btn ${u.active ? 'danger' : ''}" data-act="setActive" data-id="${esc(u.empId)}" data-on="${u.active ? '' : 1}">${u.active ? 'Deactivate' : 'Activate'}</button>
+    </div>`}
+    ${!isNew && u.lastLogin ? `<p class="hint">Last login: ${esc(when(u.lastLogin))}</p>` : ''}`);
+}
+function appSheet(a){
+  const isNew = !a; a = a || { id:'', name:'', url:'https://planettoyota.github.io/', icon:'', roles:['Admin','User'], active:true, sort:(A.apps.length + 1) * 10 };
+  openSheet(`
+    <h3>${isNew ? 'Add app' : esc(a.name)}</h3>
+    <label>App ID (short, no spaces)<input id="a-id" value="${esc(a.id)}" ${isNew ? '' : 'disabled'} autocapitalize="characters" autocorrect="off" placeholder="e.g. WORKSHOP"></label>
+    <label>Name shown to staff<input id="a-name" value="${esc(a.name)}" autocomplete="off"></label>
+    <label>App link<input id="a-url" value="${esc(a.url)}" inputmode="url" autocapitalize="off" autocorrect="off"></label>
+    <label>Icon (one emoji)<input id="a-icon" value="${esc(a.icon)}" autocomplete="off"></label>
+    <label>Roles (comma separated)<input id="a-roles" value="${esc(a.roles.join(', '))}" autocomplete="off"></label>
+    <label>Order on home screen<input id="a-sort" value="${esc(a.sort)}" inputmode="numeric"></label>
+    <label class="check"><input type="checkbox" id="a-active" ${a.active ? 'checked' : ''}> Show this app to staff</label>
+    <div class="gap"></div>
+    <button class="btn primary" data-act="saveApp" data-new="${isNew ? 1 : ''}">${isNew ? 'Add app' : 'Save'}</button>`);
+}
+function credSheet(u, temp, isNew){
+  creds = 'Planet Toyota Staff Portal\n' + portalLink() + '\n\nSelect your name in the list: ' + u.name + '\nTemporary password: ' + temp +
+          '\n\nYou will set your own password at first login.';
+  openSheet(`
+    <h3>${isNew ? 'Login created' : 'Password reset'}</h3>
+    <p class="hint" style="margin:0">Share this with ${esc(u.name)}. It is shown only once, and they must set their own password at first login.</p>
+    <div class="cred">
+      <div><small>Name to select at login</small><b>${esc(u.name)}</b></div>
+      <div><small>Temporary password</small><b class="mono">${esc(temp)}</b></div>
+    </div>
+    ${u.mobile ? `<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/91${esc(u.mobile)}?text=${encodeURIComponent(creds)}">Send on WhatsApp</a>` : ''}
+    <button class="btn" data-act="copyCreds">Copy details</button>
+    <button class="btn primary" data-act="closeSheet">Done</button>`);
+}
+
+/* ---------- actions ---------- */
+const ACT = {
+  eye(el){ const i = $('#' + el.dataset.for); const on = i.type === 'password'; i.type = on ? 'text' : 'password'; el.textContent = on ? 'Hide' : 'Show'; },
+  home(){ closeSheet(); showHome(); refreshMe(); },
+  menu(){
+    openSheet(`<h3>${esc(S.user.name)}</h3>
+      ${S.user.isAdmin ? '<button class="btn" data-act="admin">Manage staff &amp; apps</button>' : ''}
+      <button class="btn" data-act="changePwd">Change password</button>
+      <button class="btn danger" data-act="logout">Log out</button>`);
+  },
+  changePwd(){ closeSheet(); showChange(false); },
+  logout(el){ run(el, async () => { try { await api('logout'); } catch(e){} clearSession(); closeSheet(); showLogin(); }); },
+  closeSheet(){ closeSheet(); },
+  admin(el){ closeSheet(); tab = 'staff'; show('v-admin'); renderAdmin(); run(el, loadAdmin); },
+  reload(el){ run(el, async () => { A.log = null; await loadAdmin(); if (tab === 'log') await ACT.loadLog(); toast('Updated'); }); },
+  async loadLog(){ const r = await api('log'); A.log = r.rows; if (tab === 'log') renderAdmin(); },
+  tab(el){ tab = el.dataset.tab; renderAdmin(); if (tab === 'log') run(null, ACT.loadLog); },
+  flt(el){ flt = el.dataset.f; renderAdmin(); },
+  addUser(){ userSheet(null); },
+  editUser(el){ userSheet(A.users.find(u => u.empId === el.dataset.id)); },
+  addApp(){ appSheet(null); },
+  editApp(el){ appSheet(A.apps.find(a => a.id === el.dataset.id)); },
+  saveUser(el){
+    run(el, async () => {
+      const isNew = !!el.dataset.new, id = el.dataset.id || '';
+      const old = A.users.find(u => u.empId === id);
+      const access = Object.assign({}, old ? old.access : {});
+      document.querySelectorAll('#sheet select[data-app]').forEach(s => { if (s.value) access[s.dataset.app] = s.value; else delete access[s.dataset.app]; });
+      const u = { empId:id, name:$('#f-name').value.trim(), mobile:$('#f-mobile').value.replace(/\D/g,'').slice(-10),
+                  designation:$('#f-desig').value.trim(), isAdmin:$('#f-admin').checked, reportsTo:$('#f-rep').value, access };
+      const r = await api('saveUser', { user:u, isNew });
+      u.name = r.name || u.name;
+      await loadAdmin();
+      if (id === S.user.empId) refreshMe();
+      if (r.tempPassword) credSheet(u, r.tempPassword, true); else { closeSheet(); toast('Saved'); }
+    });
+  },
+  resetPwd(el){
+    if (!el.dataset.sure){ el.dataset.sure = 1; el.textContent = 'Tap again to reset'; return; }
+    run(el, async () => {
+      const u = A.users.find(x => x.empId === el.dataset.id);
+      const r = await api('resetPassword', { empId:u.empId });
+      await loadAdmin(); credSheet(u, r.tempPassword, false);
+    });
+  },
+  setActive(el){
+    const on = !!el.dataset.on;
+    if (!on && !el.dataset.sure){ el.dataset.sure = 1; el.textContent = 'Tap again to confirm'; return; }
+    run(el, async () => {
+      await api('setActive', { empId:el.dataset.id, active:on });
+      await loadAdmin(); closeSheet();
+      toast(on ? 'Login activated' : 'Deactivated. Access to all apps is removed.');
+    });
+  },
+  saveApp(el){
+    run(el, async () => {
+      const app = { id:$('#a-id').value.trim().toUpperCase(), name:$('#a-name').value.trim(), url:$('#a-url').value.trim(),
+                    icon:$('#a-icon').value.trim(), roles:$('#a-roles').value, sort:$('#a-sort').value, active:$('#a-active').checked };
+      await api('saveApp', { app, isNew:!!el.dataset.new });
+      await loadAdmin(); refreshMe(); closeSheet(); toast('Saved');
+    });
+  },
+  async copyCreds(){ try { await navigator.clipboard.writeText(creds); toast('Copied'); } catch(e){ toast('Could not copy. Please note it down.', true); } }
+};
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-act]'); if (!el) return;
+  const f = ACT[el.dataset.act]; if (f){ e.preventDefault(); f(el); }
+});
+document.addEventListener('input', e => { if (e.target.id === 'q'){ q = e.target.value; renderStaff(); } });
+document.addEventListener('change', e => { if (e.target.matches('select[data-app]')) e.target.classList.toggle('set', !!e.target.value); });
+window.addEventListener('pageshow', e => { if (e.persisted && S.token) refreshMe(); });
+
+/* ---------- start ---------- */
+loadSession();
+if (S.token && S.user){ if (S.user.mustChange) showChange(true); else showHome(); refreshMe(); }
+else showLogin();
+</script>
+</body>
+</html>
